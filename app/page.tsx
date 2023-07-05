@@ -31,6 +31,7 @@ export default function Home() {
 
   //Chart logic
 
+  //Логіка отримання висоти стовпців у графіку
   const minTemperature = -40;
   const maxTemperature = 60;
 
@@ -46,6 +47,7 @@ export default function Home() {
       return reversedValue;
     });
 
+  // Логіка отримання середньої температури в день певного міста протягом неділі(Дефолтні значення - нуль)
   useEffect(() => {
     if (selectChartCity === null) {
       setChartCityTemp7Day(Array(7).fill(0));
@@ -74,6 +76,8 @@ export default function Home() {
   }, [selectChartCity, cityWeather]);
 
   // Table logic
+
+  // Логіка отримання даних шляхом запиту до Api
   const defaultDataFetch = async () => {
     const weatherData = await Promise.all(
       citiesData.map(async city => {
@@ -95,10 +99,12 @@ export default function Home() {
     setSelectCountry(countries);
   };
 
+  // Отримання даних при першому завантаженні
   useEffect(() => {
     defaultDataFetch();
   }, []);
 
+  // Функція отримання обраних країн у таблиці
   const filterCountry = (value: string[]) => {
     if (value.length === 0) {
       defaultDataFetch();
@@ -109,6 +115,7 @@ export default function Home() {
     }
   };
 
+  // Функція отримання максимального значення мінімальної температури
   const filterMinTemp = (value: number | null) => {
     if (value === 0) {
       defaultDataFetch();
@@ -119,6 +126,7 @@ export default function Home() {
     }
   };
 
+  // Функція отримання максимального значення максимальної температури
   const filterMaxTemp = (value: number | null) => {
     if (value === 0) {
       defaultDataFetch();
@@ -129,6 +137,7 @@ export default function Home() {
     }
   };
 
+  // Функція отримання обраного міста для відображення у графіку
   const handleCityClick = (value: string) => {
     setSelectChartCity(value);
   };

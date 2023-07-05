@@ -15,7 +15,6 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 import citiesData from '../../data/cities.json';
 
-// TABLE data
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: '#000000',
@@ -130,7 +129,7 @@ const Tables = ({
           )}
         />
         <Autocomplete
-          options={Array.from({ length: 33 }, (_, index) => index * 5 - 80)}
+          options={Array.from({ length: 33 }, (_, index) => index * 5 - 80)} // Отримання опцій від -80 до 80 з кроком 5
           onChange={(event, value) => filterMinTemp(value)}
           sx={autocompleteSx}
           renderInput={params => (
@@ -146,7 +145,7 @@ const Tables = ({
           )}
         />
         <Autocomplete
-          options={Array.from({ length: 33 }, (_, index) => index * 5 - 80)}
+          options={Array.from({ length: 33 }, (_, index) => index * 5 - 80)} // Отримання опцій від -80 до 80 з кроком 5
           onChange={(event, value) => filterMaxTemp(value)}
           sx={autocompleteSx}
           renderInput={params => (
