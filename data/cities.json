@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Kyiv",
+    "country": "Ukraine",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=50.4547&longitude=30.5238&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "Dnipro",
+    "country": "Ukraine",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=48.4666&longitude=35.0407&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "Odessa",
+    "country": "Ukraine",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=46.4857&longitude=30.7438&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "London",
+    "country": "United-Kingdom",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=51.5085&longitude=-0.1257&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=60.1695&longitude=24.9354&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "Venice",
+    "country": "Italy",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=45.4371&longitude=12.3326&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "Luxemburg",
+    "country": "Luxemburg",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=49.75&longitude=6.1667&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "link": "https://api.open-meteo.com/v1/forecast?latitude=52.374&longitude=4.8897&daily=temperature_2m_max,temperature_2m_min,winddirection_10m_dominant&timezone=auto"
+  }
+]
